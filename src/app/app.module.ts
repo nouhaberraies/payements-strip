@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';  // Importer FormsModule pour utiliser ngModel
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PayementComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PayementComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,  // Ajoutez FormsModule ici
   ],
   providers: [],
   bootstrap: [AppComponent]
